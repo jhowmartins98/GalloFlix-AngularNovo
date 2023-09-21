@@ -16,4 +16,16 @@ export class MovieApiService {
   bannerApiData(): Observable<any> {
     return this.http.get(`${this.baseUrl}/trending/all/week?api_key=${this.apiKey}&language=pt-BR`); 
   }
+  trendingMovieApiData(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/trending/movie/day?api_key=${this.apiKey}&language=pt-br`);
+  }
+  movieDetails(data: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/movie/${data}?api_key=${this.apiKey}&language=pt-BR`);
+  }
+  movieVideo(data:any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/movie/${data}/videos?api_key=${this.apiKey}&language=pt-BR`);
+  }
+  movieCast(data: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/movie/${data}/credits?api_key=${this.apiKey}&language=pt-BR`);
+  }
 }
