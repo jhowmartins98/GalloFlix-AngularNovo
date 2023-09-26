@@ -12,6 +12,7 @@ import { MovieApiService } from './services/movie-api.service';
 
 import { DomSanitizer } from "@angular/platform-browser";
 import { Pipe, PipeTransform } from "@angular/core";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Pipe({ name: 'safe'})
 export class SafePipe implements PipeTransform {
@@ -32,7 +33,8 @@ export class SafePipe implements PipeTransform {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [MovieApiService
   ],
