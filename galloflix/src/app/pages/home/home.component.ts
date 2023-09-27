@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MovieApiService } from 'src/app/services/movie-api.service';
+import { subscribeOn } from 'rxjs';
 
 
 @Component({
@@ -11,6 +12,7 @@ export class HomeComponent {
 
   constructor(private service:MovieApiService) { }
 
+  movieResult: any = [];
   bannerResult: any = [];
   trendingMovieResult: any = [];
   actionMovieResult: any =[];

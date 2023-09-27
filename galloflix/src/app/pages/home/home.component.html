@@ -62,7 +62,7 @@
   <div class="row mt-5">
     <h5 class="text-white">Filmes de Comédia</h5>
     <div class="rowposter mt-3 p-2">
-      <ng-container *ngFor="let a of comedyMovieResult">
+      <ng-container *ngFor="let c of comedyMovieResult">
         <img src="https://image.tmdb.org/t/p/original/{{c.poster_path}}" class="rowming largeposter" alt="{{c.title}}" [routerLink]="['movie',c.id]">
       </ng-container>
     </div>
@@ -71,7 +71,7 @@
   <div class="row mt-5">
     <h5 class="text-white">Filmes de Documentário</h5>
     <div class="rowposter mt-3 p-2">
-      <ng-container *ngFor="let a of documentaryMovieResult">
+      <ng-container *ngFor="let d of documentaryMovieResult">
         <img src="https://image.tmdb.org/t/p/original/{{d.poster_path}}" class="rowming largeposter" alt="{{d.title}}" [routerLink]="['movie',d.id]">
       </ng-container>
     </div>
@@ -80,7 +80,7 @@
   <div class="row mt-5">
     <h5 class="text-white">Filmes de Ficção-Científica</h5>
     <div class="rowposter mt-3 p-2">
-      <ng-container *ngFor="let a of scienceFictionMovieResult">
+      <ng-container *ngFor="let f of scienceFictionMovieResult">
         <img src="https://image.tmdb.org/t/p/original/{{f.poster_path}}" class="rowming largeposter" alt="{{f.title}}" [routerLink]="['movie',f.id]">
       </ng-container>
     </div>
@@ -89,7 +89,7 @@
   <div class="row mt-5">
     <h5 class="text-white">Filmes de Suspense</h5>
     <div class="rowposter mt-3 p-2">
-      <ng-container *ngFor="let a of thrillerMovieResult">
+      <ng-container *ngFor="let t of thrillerMovieResult">
         <img src="https://image.tmdb.org/t/p/original/{{t.poster_path}}" class="rowming largeposter" alt="{{t.title}}" [routerLink]="['movie',t.id]">
       </ng-container>
     </div>

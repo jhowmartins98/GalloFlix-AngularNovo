@@ -1,7 +1,7 @@
 <div class="container mt-5 pt-5">
     <form [formGroup]="searchForm" (ngSubmit)="submitForm()">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Pesquisar Filme...">
+            <input type="text" class="form-control" formControlName="movieName" placeholder="Pesquisar Filme...">
             <button class="btn btn-danger" type="button">Pesquisar</button>
         </div>
     </form>
