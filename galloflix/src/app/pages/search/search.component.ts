@@ -21,6 +21,7 @@ export class SearchComponent {
     console.log(this.searchForm.value, 'searchForm#');
     this.service.searchMovie(this.searchForm.value).subscribe((result)=>{
     console.log(result, 'searchMovieSubmit#');
+    this.searchResult = result.results;
    });
   }
 }

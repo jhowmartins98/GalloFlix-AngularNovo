@@ -34,7 +34,7 @@ export class MovieDetailsComponent {
       result.results.forEach((elem:any) =>{
         if (elem.type == "Trailer")
         {
-          this.movieVideoResult = "https://www.youtube.com/embed" + elem.key;
+          this.movieVideoResult = "https://www.youtube.com/embed/" + elem.key;
         }
       });
       console.log(this.movieVideoResult, 'movieVideo#'); 

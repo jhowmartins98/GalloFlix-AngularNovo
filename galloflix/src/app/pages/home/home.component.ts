@@ -38,14 +38,12 @@ export class HomeComponent {
   //Banner Data
   bannerData(){
     this.service.bannerApiData().subscribe((result)=>{
-      console.log(result, 'bannerResult#');
       this.bannerResult = result.results;
     });
   }
 
   trendingData() {
     this.service.trendingMovieApiData().subscribe((result) => {
-      console.log(result, 'trendingResult#');
       this.trendingMovieResult = result.results;
     });
   }

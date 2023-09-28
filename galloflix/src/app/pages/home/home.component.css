@@ -3,7 +3,7 @@
 }
 
 .carousel-inner .carousel-item img{
-    max-height: 100vh;
+    max-height: 750px;
     object-fit: cover;
 }
 

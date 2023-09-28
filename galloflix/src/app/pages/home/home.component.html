@@ -1,8 +1,7 @@
 <div class="container-fluid p-0">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item" data-bs-interval="10000" *ngFor="let b of bannerResult; let i=index"
-        [ngClass]="{active:i===0}">
+      <div class="carousel-item" data-bs-interval="10000" *ngFor="let b of bannerResult; let i=index" [ngClass]="{active:i===0}">
         <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path}}" class="d-block w-100"
           alt="{{b.title??b.name}}">
         <div class="carousel-caption d-none d-md-block">
